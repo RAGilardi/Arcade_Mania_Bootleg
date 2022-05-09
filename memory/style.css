@@ -1,0 +1,50 @@
+:root{
+    --card-size: 150px;
+}
+
+#grid{
+    height: calc(var(--card-size) * 3);
+    width: calc(var(--card-size) * 4);
+    /* background-color: gold; */
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: var(--card-size);
+    height: var(--card-size);
+    background-image: url('./images/back.png');
+    background-repeat: no-repeat;
+    
+    /* Questo serve a far vedere l'immagine (grande) nella griglia (piccola) */
+    background-size: contain;
+
+    /* questo per avere la manina invece della freccia */
+    cursor: pointer;
+}
+
+/* Creo una classe per ogni "carta diversa" che sovrascriverò alla classe card */
+.alien{
+    background-image: url('./images/alien.png');
+}
+
+.rocket{
+    background-image: url('./images/rocket.png');
+}
+
+.bug{
+    background-image: url('./images/bug.png');
+}
+
+.duck{
+    background-image: url('./images/duck.png');
+}
+
+.spaceship{
+    background-image: url('./images/spaceship.png');
+}
+
+.tiktac{
+    background-image: url('./images/tiktac.png');
+}

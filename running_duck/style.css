@@ -1,0 +1,51 @@
+:root{
+    --road-size: 60px;
+}
+
+#grid{
+    width: calc(var(--road-size) * 10);
+    height: 400px;
+    /* background-color: gold; */
+
+    /* Questo sarà il mio pavimento */
+    border-bottom: 3px solid white;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+/* Qui sto facendo riferimento ai CHILD di grid usando il simbolo >: tutti i div figli di id=grid */
+#grid > div {
+    width: var(--road-size);
+    height: var(--road-size);
+    /* background-color: tomato; */
+}
+
+.duck{
+    /* Perchè background image e non solo img? Perchè quando io sto usando icone estetiche è più comodo manipolare/muovere/agire sul background che non su immagini. Quelle di solito le uso se voglio siano indicizzabili su google o semplicemente riconoscibili nei tag della mia pagina... */
+    background-image: url('./images/duck.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    /* !Nel CSS regolo come transita! */
+    transition: transform 0.3s;
+}
+
+/* !Classe di trasformazione */
+.duck-jump{
+    /* Qui introduco per la prima volta le operazioni sui div! */
+    transform: translate(0, -120%); 
+    
+    /* per aggiungere cose che cambiano basta mettere il fila senza virgole davanti a translate */
+    /* tipo transform: translate(0, -120%) scale(2) */
+}
+
+/*! Questa PSEUDO-CLASSE specifica che la classe plant non si applica ad oggetti di classe duck (non fa sovrapporre la pianta alla papera */
+.plant:not(.duck){
+    background-image: url('./images/plant.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

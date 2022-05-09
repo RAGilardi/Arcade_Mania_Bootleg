@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatibile" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Arcade Mania - Running Duck</title>
+
+	<!--Font preso da Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	
+	<!-- File CSS comune e specifico del gioco -->
+	<link rel="stylesheet" href="../common/style.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="board">
+		<div class="game-area">
+            <div id="grid">
+                <!-- Ancora, so quanti sono, quindi non li genereo con il css ogni volta -->
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div> 
+                <div></div>
+                <div></div>
+            </div>
+		</div>
+		<div class="game-data">
+            <h1>Running Duck</h1>
+			<p>Premi SPAZIO per saltare ed evita le piante!</p>
+			<h3>Score: <span id="score"></span></h3>
+		</div>
+	</div>
+
+	<!-- Ecco gli script di gioco e generici -->
+	<script src="../common/utils.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>

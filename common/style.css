@@ -1,0 +1,116 @@
+/*Questo CSS sarà comune a tutti i giochi e alla home page*/
+
+/* GENERIC STYLE */
+/*Introduciamo le variabili CSS!!!*/
+:root{
+	--bg-color: #3535ec;
+	--text-color: #ffffff;
+	--accent-color: #f70d68;
+}
+
+/*Inizia con dei parametri generali sempre buoni*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+	
+	/*Applico il font a tutta la pagina, per comodità*/
+	font-family: 'Press Start 2P', cursive;
+	
+	line-height: 1.4;
+	color: var(--text-color);
+}
+
+.container{
+	width: 600px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	margin: 50px auto;
+}
+
+/*Con questo Limito la dimensione dell'immagine al box che la contiene*/
+img{
+	max-width: 100%;
+}
+
+/*Quante formattazioni per un elenco...*/
+ul{
+	list-style-type: none;
+}
+
+li{
+	margin-bottom: 16px;
+}
+
+a{
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+a:hover{
+	color: var(--accent-color);
+}
+
+.new{
+	color: gold;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* STRUTTURA BASE GIOCHI */
+.board{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.game-area{
+	padding: 12px;
+
+	/* Se non specifico top, left, bottom, etc lui è il mio riferimento ancora per quello absolute dell'alert! */
+	position: relative;
+
+	display: flex;
+}
+
+.game-data{
+	padding: 12px;
+	width: 240px;
+}
+
+h1{
+	font-size: 36px;
+	margin-bottom: 16px;
+}
+
+p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+/* ALERT */
+.game-alert{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.game-alert-message{
+	font-size: 38px;
+	padding: 20px;
+	background-color: var(--accent-color);
+}

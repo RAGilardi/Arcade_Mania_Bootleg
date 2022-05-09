@@ -1,0 +1,60 @@
+:root{
+    --cell-size: 120px;
+    --cell-gutter: 20px;
+}
+
+#grid{
+    /* border: 2px solid #ffffff; */
+
+    width: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+    height: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.cell{
+    height: var(--cell-size);
+    width: var(--cell-size);
+    /* border: 4px solid #ffffff; */
+
+    /* discutibile se usare sfondo o forma carta... */
+    background-color: #ffffff;
+    background-image: url('./images/back.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Non serve aggiornare le proprietà del background, che sono le stesse per della classe celle, a cui sovrascriviamo */
+.bug{
+    background-image: url('./images/bug.png');
+}
+
+.splat{
+    background-image: url('./images/bug-splat.png');
+}
+
+/* questo per abbellire i punteggi */
+h3{
+    margin-bottom: 12px;
+}
+
+/* Pulsante brutto */
+button{
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    padding: 10px 15px;
+}

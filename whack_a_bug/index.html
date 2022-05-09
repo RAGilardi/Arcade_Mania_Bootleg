@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatibile" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--Font preso da Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	
+	<title>Arcade Mania - Whack a Bug</title>
+
+	<!-- File CSS comune e specifico del gioco -->
+	<link rel="stylesheet" href="../common/style.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+    
+<body>
+	<div class="board">
+		<div class="game-area">
+			<div id="grid">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+
+		</div>
+		<div class="game-data">
+			<h1>Whack a Bug</h1>
+			<p>Trova più bug possibili prima della fine del tempo!</p>
+			<h3>Tempo: <span id="timer-display"></span></h3>
+			<h3>Punti: <span id="score-display"></span></h3>
+
+			<button id="restart">Ricomincia</button>
+		</div>
+	</div>
+
+	<!-- Ecco gli script di gioco e generici -->
+	<script src="./script.js"></script>
+	<script src="../common/utils.js"></script>
+</body>
+</html>

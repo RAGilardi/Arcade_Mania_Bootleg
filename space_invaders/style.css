@@ -1,0 +1,45 @@
+:root{
+    --cell-size: 40px;
+    --grid-size: 15;
+}
+
+#grid{
+    width: calc(var(--cell-size) * var(--grid-size) + 4px);
+    height: calc(var(--cell-size) * var(--grid-size) + 4px);
+    /* background-color: gold; */
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 2px solid white;
+}
+
+/* TODO: Aggiungi una linea del terreno? */
+#grid > div{
+    width: var(--cell-size);
+    height: var(--cell-size);
+
+    /* background-color: tomato; */
+    font-size: 8px;
+
+    /* Per non scriverle per ogni id, scrivo al livello superiori le proprietà comuni del background */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.alien{
+    background-image: url('./images/alien.png');
+}
+
+.spaceship{
+    background-image: url('./images/spaceship.png');
+}
+
+.laser{
+    background-image: url('./images/laser.png');
+}
+
+.boom{
+    background-image: url('./images/boom.png');
+}

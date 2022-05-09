@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatibile" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--Font preso da Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	
+	<title>Arcade Mania - Tetris</title>
+
+	<!-- File CSS comune e specifico del gioco -->
+	<link rel="stylesheet" href="../common/style.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+    
+<body>
+	<div class="board">
+		<div class="game-area">
+			<div id="grid">
+			</div>
+            <div id="mini-grid">
+            </div>
+		</div>
+		<div class="game-data">
+			<h1>Tetris</h1>
+			<p>Premi i tasti &#8592; e &#8594; per muovere il tetromino (no pac-man) e &#x2191; ruotarlo<br>Completa linee prima di toccare il soffitto!</p>
+            <h3>Score: <span id="score"></span></h3>
+            <button id="start-button">Start/Pause</button>
+		</div>
+	</div>
+
+	<!-- Ecco gli script di gioco e generici -->
+	<script src="./script.js"></script>
+	<script src="../common/utils.js"></script>
+</body>
+</html>

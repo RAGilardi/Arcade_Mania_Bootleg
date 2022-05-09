@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatibile" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Arcade Mania - Memory Game</title>
+
+	<!--Font preso da Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	
+	<!-- File CSS comune e specifico del gioco -->
+	<!-- Una C di CSS sta per CASCADING: L'ordine con cui appliuco gli stili (o con cui li chiamo) è importante e io vedrò sempre l'ultima opzione. Qui sto applicando prima il common e poi quello della pagina (se ci fossero conflitti, vedrei il secondo) e con il js sovrascriveremo stili sopra quelli inseriti sfruttando questa cascata!-->
+	<link rel="stylesheet" href="../common/style.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+    
+<body>
+	<div class="board">
+		<div class="game-area">
+			<div id="grid">
+				<!-- Da ora automatizzeremo con js il copia incolla. Dicono che anche per css ci sono tool per evitare i copia-incolla, ma non fanno spoiler :( -->
+			</div>
+		</div>
+		<div class="game-data">
+			<h1>Memory Game</h1>
+			<p>Abbina tutti i simboli uguali e scopri tutte le carte</p>
+			<!-- Nelllo span scriverò il numero di errori -->
+			<h3>Errors: <span id="error"></span></h3>
+		</div>
+	</div>
+
+	<!-- Ecco gli script di gioco e generici -->
+	<!-- Anche qui l'ordine è importante: nel secondo file uso funzioni nel primo, quindi devo aver caricato prima utils di script!-->
+	<script src="../common/utils.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>

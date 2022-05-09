@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatibile" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+		<!--Font preso da Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+		
+		<title>Home Page Arcade Mania</title>
+        <link rel="stylesheet" href="./common/style.css">
+		
+    </head>
+    
+    <body>
+		<!--Di default gli oggetti sono disposti in row, ma abbiamo visto che uno strumento comodo per organizzarli (qui in colonna) sono le flex-box. Quindi li metto tutti in un container flex-->
+		<div class="container">
+			<img src="common/thumbs.png" alt="thumbs">
+			<img src="common/logo.png" alt="Arcade Mania Logo">   
+
+			<!--Domanda carina: Come mai a e non un bottone? Perchè a è direttamente un link, mentre per rendere un bottone cliccabile serve il javascript. Di solito se vediamo cose che sembrano bottoni sono immagini con una a e non scriptati-->
+			<ul>
+				<li><a href='./tris/index.html'>Tris</a></li>
+				<li><a href='./memory/index.html'>Memory Game</a></li>
+				<li><a href='./whack_a_bug/index.html'>Whack a Bug</a></li>
+				<li><a href='./running_duck/index.html'>Runner Duck</a></li>
+				<li><a href='./space-invaders/index.html'>Space Invaders</a></li>
+				<li><a href='./tetris/index.html'>Tetris<sup class="new">New!</sup></a></li>				
+			</ul>
+		</div>	
+			
+    </body>
+</html>
