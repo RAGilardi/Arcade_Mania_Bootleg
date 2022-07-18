@@ -16,12 +16,13 @@
     </head>
     
     <body>
-		<!--Di default gli oggetti sono disposti in row, ma abbiamo visto che uno strumento comodo per organizzarli (qui in colonna) sono le flex-box. Quindi li metto tutti in un container flex-->
-		<div class="container">
-			<img src="common/thumbs.png" alt="thumbs">
-			<img src="common/logo.png" alt="Arcade Mania Logo">   
 
-			<!--Domanda carina: Come mai a e non un bottone? Perchè a è direttamente un link, mentre per rendere un bottone cliccabile serve il javascript. Di solito se vediamo cose che sembrano bottoni sono immagini con una a e non scriptati-->
+		<div class="container">
+			<div class="header-images">
+				<img src="common/thumbs.png" alt="thumbs" id="thumbs">
+				<img src="common/logo.png" alt="Arcade Mania Logo" id="logo">   
+			</div>
+
 			<ul>
 				<li><a href='./tris/index.html'>Tris</a></li>
 				<li><a href='./memory/index.html'>Memory Game</a></li>
@@ -30,7 +31,19 @@
 				<li><a href='./space_invaders/index.html'>Space Invaders</a></li>
 				<li><a href='./tetris/index.html'>Tetris<sup class="new">New!</sup></a></li>				
 			</ul>
-		</div>	
-			
+		</div>
+		
+		<div class="info-text">
+			<p>
+				<bold>DISCLAIMER:</bold>
+				<br>
+				This website is based on a project showed during a 4-days long introductory class to web development (called "coding week 2021") by <a href="https://boolean.careers/">Boolean</a>.
+				<br>
+				I attended this course and tried to expand by myself the project adding some new features, such as responsive element sizing and positioning, new games, new animations and logic for some games, possibility to save high-scores, reset and menu buttons...
+				<br>
+				I highly recommend to consider a Boolean complete course if you're interested in learning web development. I could not do it and tried to learn something by myself, but their introductory lectures were totally interesting and well made.
+			</p> 
+		</div>
+
     </body>
 </html>

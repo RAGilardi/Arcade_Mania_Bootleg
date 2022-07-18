@@ -1,14 +1,11 @@
-/*Questo CSS sarà comune a tutti i giochi e alla home page*/
-
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* GENERIC STYLE */
-/*Introduciamo le variabili CSS!!!*/
 :root{
 	--bg-color: #3535ec;
 	--text-color: #ffffff;
 	--accent-color: #f70d68;
 }
 
-/*Inizia con dei parametri generali sempre buoni*/
 *{
     margin: 0;
     padding: 0;
@@ -26,27 +23,65 @@ body{
 }
 
 .container{
-	width: 600px;
+	width: 70%;
+	min-width:400px;
 	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	
-	margin: 50px auto;
+	margin: 5% auto;
+
+	font-size: 20px;
+	font-size: max(calc((vw+vh)/3), 8px);
+	line-height: 40%;
 }
 
-/*Con questo Limito la dimensione dell'immagine al box che la contiene*/
+.info-text{
+	width: 90%;
+	min-width:400px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	border: var(--accent-color) 3px solid;
+
+	margin: 2% auto;
+	margin-top: 0%;
+}
+
+.info-text > p {
+	font-size: 8px;
+	font-size: min(calc((vw+vh)/4), 8px);
+	text-align: center;
+	margin: calc((1vw+1vh)/2);
+}
+
+.header-images{
+	width: 70%;
+	min-width:400px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-images > #thumbs{
+	width: 70%;
+}
+
 img{
 	max-width: 100%;
 }
 
-/*Quante formattazioni per un elenco...*/
 ul{
 	list-style-type: none;
+	min-width: 300px;
 }
 
 li{
-	margin-bottom: 16px;
+	margin-bottom: 10%;
 }
 
 a{
